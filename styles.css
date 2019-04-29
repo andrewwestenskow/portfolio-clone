@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Noto+Serif+JP');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Noto Serif JP', serif; */
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif
+}
+
+/* MEDIA QUERIES */
+
+/* NAVIGATION */
+
+#fixed-top{
+  position: fixed;
+  transition: all 500ms;
+}
+
+.navbar-extend{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* margin-left: 10%; */
+  /* margin-top: 3vh; */
+  height: 8vh;
+  align-items: center;
+}
+
+.navbar-grey{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* margin-left: 10%; */
+  /* margin-top: 3vh; */
+  background: #212529;
+  height: 6vh;
+  align-items: center;
+}
+
+.logo-hold{
+  font-family: 'Kaushan Script', 'cursive';
+  color: gold;
+  font-size: 28px;
+}
+
+.nav-text{
+  display: flex;
+}
+
+@media(max-width: 990px){
+  .nav-text{
+    display: none;
+  }
+
+  #fixed-top{
+    justify-content: flex-start;
+    /* margin-left: 10%; */
+  }
+  .logo-hold{
+    margin-left: 10%;
+  }
+}
+
+a{
+  text-decoration: none
+}
+
+.nav-link{
+  color: white;
+  font-size: 16px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.nav-link:hover{
+  color: gold
+}
+
+/* HEADER */
+
+.header{
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;;
+}
+
+.welcome-text{
+  font-family: 'Noto Serif JP', serif;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.meet-you-text{
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.tell-me-button{
+  background: gold;
+  height: 69px;
+  width:225px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  border: none;
+  box-shadow: none;
+  border-radius: .25rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* CONTAINER */
+
+.container{
+  text-align: center;
+  width: 100%;
+  /* padding-right: 15px;
+  padding-left: 15px; */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* SERVICES */
+
+#services{
+  padding: 150px 0;
+}
+
+.content-hold{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+@media(max-width: 650px){
+  .content-hold{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.section-heading{
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.section-subhead{
+  font-style: italic;
+}
+
+.service-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 350px;
+}
+
+.content-hold{
+  display: flex;
+}
+
+.icon-hold{
+  background-color: gold;
+  font-weight: 900;
+  color: white;
+  font-size: 100px;
+  border-radius: 500px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+  padding: 25px;
+}
+
+.content-head{
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+.content{
+  margin-top: 30px;
+  color: #6c757d;
+  line-height: 1.75;
+}
+
+/* PORTFOLIO */
+
+#portfolio{
+  background: #f8f9fa;
+  padding: 150px 0;
+}
+
+.portfolio-hold{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 1390px;
+}
+
+.portfolio-content{
+  background: white;
+  max-width: 33.33333333333%;
+  margin: 25px 0;
+  max-width: 350px;
+  box-sizing: border-box;
+}
+
+.pc{
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.portfolio-link>img{
+max-width: 100%;
+width: 100%;
+z-index: 0;
+}
+
+.portfolio-link{
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.portfolio-hover{
+  z-index: 1;
+  height: 262.5px;
+  width:100%;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.portfolio-hover:hover{
+  background: rgba(255, 217, 0, 0.623);
+}
+
+
+/* ABOUT */
+
+#about{
+  padding: 150px 0;
+}
+
+/* TEAM */
+
+#team{
+  background: #f8f9fa;
+  padding: 150px 0;
+}
+
+/* CONTACT */
+
+#contact{
+  padding: 150px 0;
+}
+
